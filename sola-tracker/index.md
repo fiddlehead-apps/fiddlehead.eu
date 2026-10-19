@@ -13,4 +13,4 @@ Zähl und verfolge, was dir wichtig ist – schnell und ohne Schnickschnack.
 
 - [Support](/sola-tracker/support/)
 - [Datenschutz / Privacy](/sola-tracker/privacy/)
-- [Quellcode / Source code](https://github.com/fiddlehead-apps) <!-- TODO: Link auf das App-Repo -->
+- [Quellcode / Source code](https://github.com/fiddlehead-apps/app_tracker)
