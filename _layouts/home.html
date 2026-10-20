@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">
+      <span lang="de">Apps für iPhone, iPad, Mac und Apple Watch</span>
+      <span lang="en">Apps for iPhone, iPad, Mac and Apple Watch</span>
+    </p>
+    <h1>
+      <span lang="de">Kleine, kostenlose Apps, die eine Sache gut machen.</span>
+      <span lang="en">Small, free apps that do one thing well.</span>
+    </h1>
+    <ul class="pills">
+      <li><span lang="de">Open Source</span><span lang="en">Open source</span></li>
+      <li><span lang="de">Keine Werbung</span><span lang="en">No ads</span></li>
+      <li><span lang="de">Kein Tracking</span><span lang="en">No tracking</span></li>
+      <li><span lang="de">Keine Accounts</span><span lang="en">No accounts</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="wrap" aria-labelledby="apps-heading">
+  <h2 id="apps-heading" class="section-title">Apps</h2>
+  <div class="cards">
+    {%- for app in site.data.apps %}
+    <a class="card" href="{{ '/' | append: app.slug | append: '/' | relative_url }}" style="--accent: {{ app.accent }}; --accent-dark: {{ app.accent_dark }};">
+      <img class="card-icon" src="{{ '/assets/icons/' | append: app.slug | append: '.png' | relative_url }}" alt="" width="64" height="64">
+      <h3><span lang="de">{{ app.name_de }}</span><span lang="en">{{ app.name_en }}</span></h3>
+      <p class="card-tagline"><span lang="de">{{ app.tagline_de }}</span><span lang="en">{{ app.tagline_en }}</span></p>
+      <p class="card-text"><span lang="de">{{ app.description_de }}</span><span lang="en">{{ app.description_en }}</span></p>
+      <p class="card-platforms"><span lang="de">Für {{ app.platforms_de }}</span><span lang="en">For {{ app.platforms_en }}</span></p>
+    </a>
+    {%- endfor %}
+  </div>
+</section>
+
+<div class="wrap prose home-prose">
+{{ content }}
+</div>

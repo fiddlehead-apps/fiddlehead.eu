@@ -1,2 +1,11 @@
 title: Fiddlehead Apps
 description: Kleine, kostenlose Open-Source-Apps, die eine Sache gut machen.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page

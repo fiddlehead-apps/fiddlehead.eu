@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div class="wrap prose">
+  {%- if page.app %}
+  {%- assign crumb_app = site.data.apps | where: "slug", page.app | first %}
+  <nav class="crumb">
+    <a href="{{ '/' | append: page.app | append: '/' | relative_url }}">
+      <img src="{{ '/assets/icons/' | append: page.app | append: '.png' | relative_url }}" alt="" width="24" height="24">
+      <span lang="de">{{ crumb_app.name_de }}</span><span lang="en">{{ crumb_app.name_en }}</span>
+    </a>
+  </nav>
+  {%- endif %}
+  {{ content }}
+</div>

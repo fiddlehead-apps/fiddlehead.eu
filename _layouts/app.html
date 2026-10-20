@@ -1,0 +1,22 @@
+---
+layout: default
+---
+{%- assign app = site.data.apps | where: "slug", page.app_page | first -%}
+<section class="app-hero wrap" style="--accent: {{ app.accent }}; --accent-dark: {{ app.accent_dark }};">
+  <img class="app-icon" src="{{ '/assets/icons/' | append: app.slug | append: '.png' | relative_url }}" alt="" width="112" height="112">
+  <div>
+    <h1><span lang="de">{{ app.name_de }}</span><span lang="en">{{ app.name_en }}</span></h1>
+    <p class="app-tagline"><span lang="de">{{ app.tagline_de }}</span><span lang="en">{{ app.tagline_en }}</span></p>
+    <p class="card-platforms"><span lang="de">Für {{ app.platforms_de }}</span><span lang="en">For {{ app.platforms_en }}</span></p>
+  </div>
+</section>
+
+<div class="wrap prose" style="--accent: {{ app.accent }}; --accent-dark: {{ app.accent_dark }};">
+  <p class="lead"><span lang="de">{{ app.description_de }}</span><span lang="en">{{ app.description_en }}</span></p>
+  {{ content }}
+  <ul class="buttons">
+    <li><a class="button" href="{{ '/' | append: app.slug | append: '/support/' | relative_url }}">Support</a></li>
+    <li><a class="button" href="{{ '/' | append: app.slug | append: '/privacy/' | relative_url }}"><span lang="de">Datenschutz</span><span lang="en">Privacy</span></a></li>
+    <li><a class="button" href="{{ app.repo }}"><span lang="de">Quellcode</span><span lang="en">Source code</span></a></li>
+  </ul>
+</div>
