@@ -13,4 +13,4 @@ Vergiss nie wieder einen Geburtstag.
 
 - [Support](/sola-birthdays/support/)
 - [Datenschutz / Privacy](/sola-birthdays/privacy/)
-- [Quellcode / Source code](https://github.com/fiddlehead-apps) <!-- TODO: Link auf das App-Repo -->
+- [Quellcode / Source code](https://github.com/fiddlehead-apps/app_birthdays)

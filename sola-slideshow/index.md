@@ -13,4 +13,4 @@ Zeig deine Fotos als ruhige, schöne Diashow.
 
 - [Support](/sola-slideshow/support/)
 - [Datenschutz / Privacy](/sola-slideshow/privacy/)
-- [Quellcode / Source code](https://github.com/fiddlehead-apps) <!-- TODO: Link auf das App-Repo -->
+- [Quellcode / Source code](https://github.com/fiddlehead-apps/app_slideshow)

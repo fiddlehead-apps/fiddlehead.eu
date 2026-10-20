@@ -5,7 +5,7 @@ permalink: /sola-tracker/privacy/
 
 # Sola Tracker – Datenschutzerklärung / Privacy Policy
 
-Stand / Last updated: 18.10.2026
+Stand / Last updated: 19.10.2026
 
 <!-- TODO: Prüfen, ob die Annahmen zu Daten und Berechtigungen für diese App stimmen -->
 
@@ -13,9 +13,9 @@ Stand / Last updated: 18.10.2026
 
 **Kurz gesagt: Sola Tracker sammelt keine personenbezogenen Daten.** Es gibt keine Accounts, keine Werbung, kein Tracking, keine Analyse-Tools und keine eigenen Server, an die die App Daten schickt.
 
-Alles, was du in der App einträgst, wird ausschließlich lokal auf deinem Gerät gespeichert. Löschst du die App, sind auch die Daten weg.
+Alles, was du in der App einträgst, wird auf deinem Gerät gespeichert (und auf deiner Apple Watch, falls du die Watch-App nutzt). Löschst du die App, sind auch die Daten weg, außer du hast die iCloud-Synchronisierung eingeschaltet: Dann bleibt die Kopie in deiner iCloud, bis du sie löschst.
 
-**iCloud:** Deine Einstellungen in der App werden über deinen eigenen iCloud-Account synchronisiert, damit sie auf all deinen Geräten gleich sind. Die Speicherung übernimmt Apple in deinem privaten iCloud-Speicher. Ich habe darauf keinen Zugriff. Es gelten die [Datenschutzbestimmungen von Apple](https://www.apple.com/de/legal/privacy/). Die Synchronisierung kannst du in den iOS-Einstellungen unter deinem Namen → iCloud abschalten. Gespeicherte Einstellungen bleiben in deiner iCloud, bis du sie dort löschst.
+**iCloud (nur wenn du es einschaltest):** Die iCloud-Synchronisierung ist aus, bis du sie in der App selbst einschaltest. Solange sie aus ist, verlässt nichts davon dein Gerät. Schaltest du sie ein, werden deine Tracker und Einträge in der privaten Datenbank deines eigenen iCloud-Accounts gespeichert, damit sie auf deinen Geräten gleich sind. Die Speicherung übernimmt Apple, ich habe darauf keinen Zugriff. Es gelten die [Datenschutzbestimmungen von Apple](https://www.apple.com/de/legal/privacy/). Beim Ausschalten in der App kannst du wählen, ob die Daten auch aus iCloud gelöscht werden. Außerdem kannst du sie jederzeit in den iOS-Einstellungen unter deinem Namen → iCloud → Speicher verwalten löschen.
 
 Die App enthält keine Software von Drittanbietern, die Daten erhebt.
 
@@ -29,9 +29,9 @@ Die App enthält keine Software von Drittanbietern, die Daten erhebt.
 
 **In short: Sola Tracker does not collect any personal data.** There are no accounts, no ads, no tracking, no analytics and no servers of our own that the app sends data to.
 
-Everything you enter is stored only locally on your device. Deleting the app deletes the data.
+Everything you enter is stored on your device (and on your Apple Watch if you use the watch app). Deleting the app deletes the data, unless you turned on iCloud sync: then the copy in your iCloud stays until you delete it.
 
-**iCloud:** Your app settings are synced via your own iCloud account so they stay the same across your devices. Apple stores them in your private iCloud storage. I have no access to them. [Apple's Privacy Policy](https://www.apple.com/legal/privacy/) applies. You can turn off syncing in iOS Settings under your name → iCloud. Stored settings remain in your iCloud until you delete them there.
+**iCloud (only if you turn it on):** iCloud sync is off until you turn it on in the app. While it's off, none of this leaves your device. If you turn it on, your trackers and entries are stored in the private database of your own iCloud account so they stay the same across your devices. Apple stores them; I have no access to them. [Apple's Privacy Policy](https://www.apple.com/legal/privacy/) applies. When you turn sync off in the app, you can choose to delete the data from iCloud as well. You can also delete it any time in iOS Settings under your name → iCloud → Manage Storage.
 
 The app contains no third-party software that collects data.
 
