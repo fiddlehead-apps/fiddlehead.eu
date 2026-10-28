@@ -4,8 +4,8 @@
 - slug: sola-tracker
   name_de: Sola Tracker
   name_en: Sola Tracker
-  accent: "#3547D4"
-  accent_dark: "#8A9BFF"
+  accent: "#D2621A"
+  accent_dark: "#FFA25E"
   repo: https://github.com/fiddlehead-apps/app_tracker
   platforms_de: iPhone und Apple Watch
   platforms_en: iPhone and Apple Watch

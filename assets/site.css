@@ -16,17 +16,13 @@
 
 :root {
   --bg: #f6f3ea;
-  --bg-hero: #e7efdf;
   --surface: #fffdf8;
   --ink: #1c2a21;
   --muted: #56665b;
   --line: #e1dccd;
   --fern: #2f6b45;
   --fern-strong: #22533a;
-  --fern-soft: #dfeadb;
-  --sun: #f2bd45;
-  --sun-soft: #fbefcf;
-  --shadow: 0 1px 2px rgb(28 42 33 / 0.06), 0 8px 24px -12px rgb(28 42 33 / 0.18);
+  --stroke: 1.5px;
   --radius: 18px;
   --wrap: 1040px;
   --prose: 720px;
@@ -37,17 +33,12 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #111814;
-    --bg-hero: #16241b;
     --surface: #18211b;
     --ink: #e6eee8;
     --muted: #9fb2a5;
     --line: #2a372f;
     --fern: #8fd19e;
     --fern-strong: #b4e6bf;
-    --fern-soft: #1d3325;
-    --sun: #f2bd45;
-    --sun-soft: #3a3016;
-    --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 10px 28px -14px rgb(0 0 0 / 0.6);
   }
   [style*="--accent"] { --accent: var(--accent-dark) !important; }
 }
@@ -79,7 +70,7 @@ body {
 
 a { color: var(--fern); text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
 a:hover { color: var(--fern-strong); text-decoration-thickness: 2px; }
-:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; border-radius: 6px; }
+:focus-visible { outline: 2px solid var(--fern); outline-offset: 2px; border-radius: 6px; }
 
 h1, h2, h3 {
   font-family: var(--font-head);
@@ -128,7 +119,7 @@ h1, h2, h3 {
   padding: 3px;
   border-radius: 999px;
   background: var(--surface);
-  border: 1px solid var(--line);
+  border: var(--stroke) solid var(--line);
 }
 .lang-switch button {
   appearance: none;
@@ -148,26 +139,24 @@ h1, h2, h3 {
 .hero {
   position: relative;
   overflow: hidden;
-  background:
-    radial-gradient(60% 80% at 100% 0%, var(--sun-soft) 0%, transparent 70%),
-    var(--bg-hero);
   border-bottom: 1px solid var(--line);
   padding: 72px 0 64px;
 }
 .hero::after {
-  /* Large faint fiddlehead curl as decoration */
+  /* Large fiddlehead curl as a thin line drawing */
   content: "";
   position: absolute;
-  right: -40px;
-  bottom: -60px;
-  width: 340px;
-  height: 340px;
+  right: -10px;
+  bottom: -70px;
+  width: 360px;
+  height: 360px;
   background: var(--fern);
-  opacity: 0.08;
-  -webkit-mask: url("fiddlehead.svg") center / contain no-repeat;
-  mask: url("fiddlehead.svg") center / contain no-repeat;
+  opacity: 0.3;
+  -webkit-mask: url("fiddlehead-line.svg") center / contain no-repeat;
+  mask: url("fiddlehead-line.svg") center / contain no-repeat;
   pointer-events: none;
 }
+.hero .wrap { position: relative; z-index: 1; }
 .eyebrow {
   margin: 0 0 12px;
   color: var(--fern);
@@ -194,20 +183,21 @@ h1, h2, h3 {
 .pills li {
   padding: 6px 14px;
   border-radius: 999px;
-  background: var(--surface);
-  border: 1px solid var(--line);
+  border: var(--stroke) solid var(--line);
+  background: var(--bg);
   font-weight: 600;
   font-size: 0.92rem;
 }
 .pills li::before {
   content: "";
   display: inline-block;
-  width: 8px;
-  height: 8px;
-  margin-right: 8px;
-  border-radius: 50%;
-  background: var(--sun);
-  vertical-align: 0.08em;
+  width: 14px;
+  height: 14px;
+  margin-right: 7px;
+  background: var(--fern);
+  -webkit-mask: url("fiddlehead.svg") center / contain no-repeat;
+  mask: url("fiddlehead.svg") center / contain no-repeat;
+  vertical-align: -0.12em;
 }
 
 /* App cards */
@@ -227,8 +217,7 @@ h1, h2, h3 {
   padding: 24px;
   border-radius: var(--radius);
   background: var(--surface);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow);
+  border: var(--stroke) solid var(--line);
   color: var(--ink);
   text-decoration: none;
   overflow: hidden;
@@ -238,20 +227,18 @@ h1, h2, h3 {
   content: "";
   position: absolute;
   inset: 0 0 auto 0;
-  height: 5px;
+  height: 3px;
   background: var(--accent);
 }
 .card:hover {
   color: var(--ink);
-  transform: translateY(-3px);
-  border-color: color-mix(in srgb, var(--accent) 45%, var(--line));
-  box-shadow: 0 1px 2px rgb(0 0 0 / 0.06), 0 18px 36px -18px color-mix(in srgb, var(--accent) 60%, transparent);
+  transform: translateY(-2px);
+  border-color: var(--accent);
 }
 .card-icon {
   width: 64px;
   height: 64px;
   border-radius: 15px;
-  box-shadow: 0 6px 16px -8px color-mix(in srgb, var(--accent) 80%, transparent);
 }
 .card h3 {
   margin: 18px 0 4px;
@@ -311,7 +298,7 @@ h1, h2, h3 {
   max-width: none;
   padding: 18px 20px;
   border-radius: 14px;
-  background: var(--fern-soft);
+  border: var(--stroke) solid var(--line);
   color: var(--ink);
   line-height: 1.55;
 }
@@ -329,8 +316,8 @@ h1, h2, h3 {
 .note {
   padding: 16px 20px;
   border-radius: 14px;
-  border-left: 5px solid var(--sun);
-  background: var(--sun-soft);
+  border-left: 3px solid var(--fern);
+  background: var(--surface);
 }
 .steps {
   counter-reset: step;
@@ -347,7 +334,7 @@ h1, h2, h3 {
   padding: 18px 20px 18px 72px;
   border-radius: 14px;
   background: var(--surface);
-  border: 1px solid var(--line);
+  border: var(--stroke) solid var(--line);
 }
 .steps li::before {
   content: counter(step);
@@ -359,9 +346,9 @@ h1, h2, h3 {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: var(--fern);
-  color: var(--surface);
-  font: 700 1.05rem/1 var(--font-head);
+  border: var(--stroke) solid var(--fern);
+  color: var(--fern);
+  font: 600 1.05rem/1 var(--font-head);
 }
 
 /* App page */
@@ -390,7 +377,6 @@ h1, h2, h3 {
   width: 112px;
   height: 112px;
   border-radius: 26px;
-  box-shadow: 0 12px 28px -12px color-mix(in srgb, var(--accent) 85%, transparent);
 }
 .app-hero h1 { margin: 0 0 6px; font-size: clamp(2rem, 5vw, 2.8rem); }
 .app-tagline { margin: 0 0 6px; font-size: 1.15rem; font-weight: 650; color: var(--accent); }
@@ -436,7 +422,7 @@ h1, h2, h3 {
   body { font-size: 1rem; }
   .wrap { padding: 0 16px; }
   .hero { padding: 48px 0 44px; }
-  .hero::after { width: 220px; height: 220px; right: -50px; bottom: -50px; }
+  .hero::after { width: 220px; height: 220px; right: -40px; bottom: -50px; }
   .app-hero { flex-direction: column; align-items: flex-start; gap: 18px; padding-top: 28px; }
   .app-icon { width: 88px; height: 88px; border-radius: 20px; }
   .steps li { padding-left: 64px; }
