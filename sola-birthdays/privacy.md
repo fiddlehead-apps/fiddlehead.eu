@@ -4,14 +4,12 @@ permalink: /sola-birthdays/privacy/
 app: sola-birthdays
 ---
 
-<!-- TODO: Prüfen, ob die Annahmen zu Daten und Berechtigungen für diese App stimmen -->
-
 <div lang="de" markdown="1">
 
 # Datenschutzerklärung
 
 {: .muted}
-Stand: 19.10.2026
+Stand: 29.10.2026
 
 **Kurz gesagt: Sola Birthdays sammelt keine personenbezogenen Daten.** Es gibt keine Accounts, keine Werbung, kein Tracking, keine Analyse-Tools und keine eigenen Server, an die die App Daten schickt.
 
@@ -21,7 +19,7 @@ Geburtstage, die du einträgst, werden auf deinem Gerät gespeichert, in deiner 
 
 Die App enthält keine Software von Drittanbietern, die Daten erhebt.
 
-**Verantwortlich:** Christoph Schneider, <!-- TODO: ladungsfähige Anschrift --> E-Mail: [support@fiddlehead.eu](mailto:support@fiddlehead.eu)
+**Verantwortlich:** Christoph Schneider, Rechbergstr. 20/2, 73098 Rechberghausen, E-Mail: [support@fiddlehead.eu](mailto:support@fiddlehead.eu)
 
 **Diese Website:** fiddlehead.eu wird über GitHub Pages (GitHub Inc., USA) gehostet. Beim Aufruf verarbeitet GitHub technisch notwendige Daten wie deine IP-Adresse, um die Seite auszuliefern und abzusichern. Details: [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 
@@ -34,7 +32,7 @@ Die App enthält keine Software von Drittanbietern, die Daten erhebt.
 # Privacy Policy
 
 {: .muted}
-Last updated: 19.10.2026
+Last updated: 29.10.2026
 
 **In short: Sola Birthdays does not collect any personal data.** There are no accounts, no ads, no tracking, no analytics and no servers of our own that the app sends data to.
 
@@ -44,7 +42,7 @@ Birthdays you enter are stored on your device, and in your iCloud only if you tu
 
 The app contains no third-party software that collects data.
 
-**Controller:** Christoph Schneider, email: [support@fiddlehead.eu](mailto:support@fiddlehead.eu)
+**Controller:** Christoph Schneider, Rechbergstr. 20/2, 73098 Rechberghausen, Germany, email: [support@fiddlehead.eu](mailto:support@fiddlehead.eu)
 
 **This website:** fiddlehead.eu is hosted on GitHub Pages (GitHub Inc., USA). When you visit, GitHub processes technically necessary data such as your IP address to deliver and secure the site. See the [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 
